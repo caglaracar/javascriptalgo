@@ -22,7 +22,7 @@ verilen bir sayının faktöriyelini bulunuz*/
 Verilen bir dizinin elemanlarını toplayan bir fonksiyon yazın.
 Örnek girdi: [1, 2, 3, 4, 5]
 Örnek çıktı: 15
-*/ 
+*/
 
 // const sumFunction= (incomingArray)=>{
 //     let result=0;
@@ -35,8 +35,6 @@ Verilen bir dizinin elemanlarını toplayan bir fonksiyon yazın.
 
 // arrayToSend=[1,2,3,4,5,6,7,8,9,10]
 // console.log("Toplam sonucu :",sumFunction(arrayToSend));
-
-
 
 
 /*
@@ -60,7 +58,6 @@ Verilen bir dizideki tek sayıların toplamını hesaplayan bir fonksiyon yazın
 // }
 
 
-
 // 2.Yol
 
 // const sumOdd=(numbers)=>{
@@ -76,23 +73,28 @@ Verilen bir dizideki tek sayıların toplamını hesaplayan bir fonksiyon yazın
 // console.log("Tek sayıların toplamı 2. yöntem ile",sumOdd(numbers))
 
 
-
-
 /*
 Soru 4:
 Verilen bir dizi içindeki çift sayıların toplamını hesaplayan(even)
 bir fonksiyon yazın.
-Örneğin, [1, 2, 3, 4, 5, 6] dizisi için fonksiyonun sonucu
- 12 olmalıdır (2 + 4 + 6 = 12).
+Örneğin, [1, 2, 3, 4, 5, 6] dizisi için fonksiyonun sonucu : 12 olmalıdır
  */
 
 
+// 3.yöntem
 
 
-
-
-
-
+// const evenFunc = (numbers) => {
+//     // işlemler
+//     let evenSum = 0;
+//     for (let number of numbers) {
+//         if (number % 2 === 0)
+//             evenSum += number
+//     }
+//     return evenSum;
+// }
+// const numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9]
+// console.log(evenFunc(numbers))
 
 
 /*
@@ -103,81 +105,42 @@ Verilen bir dizideki tek sayıların ortalamasını hesaplayan bir fonksiyon yaz
 */
 
 /*
+ const oddSumFunc= (numbers)=>{
+     const filtered=numbers.filter( number=>number%2 !==0)
+     let sum= filtered.reduce( (acc,curr)=>acc+curr,0)
+     // isteyenler reduce fonksiyonunu araştırabilir : MDN
+     console.log(sum)
+     let result= sum / numbers.length
+     return result.toFixed()
+ }
+ const numbers=[1,2,3,4,5,6,7];
+ console.log(oddSumFunc(numbers))
+ */
+
+/*
 Soru 6 :
 Verilen bir dizi içindeki en büyük sayıyı bulan bir fonksiyon yazın.
 Örnek girdi: [10, 5, 8, 20]
 Örnek çıktı: 20
 */
 
-
-/*
-const sumFunction = (takenArray)=>{
-    // bir takım işlemler 
-    let result=0
-    for (let i = 0; i < takenArray.length; i++) {
-        //  result =result+ takenArray[i];
-        result+=takenArray[i];
-    }
-    return result;
-}
-const sentArray=[1, 2, 3, 4, 5,6]
-console.log(sumFunction(sentArray));
-*/
-
-// Tek sayılar için
-
-/*
-const oddSumFunction = (takenArray) => {
-    // bir takım işlemler 
-    let result = 0
-    for (let i = 0; i < takenArray.length; i++) {
-        //  result =result+ takenArray[i];
-        //    takenArray[i]%2===1 ? result=takenArray[i]:"";
-        if (takenArray[i] % 2 === 1) {
-            result += takenArray[i]
-        }
-    }
-    return result;
-}
-const sentArray = [1, 2, 3, 4, 5, 6]
-console.log(oddSumFunction(sentArray));
-*/
-
-
-
- // Çift sayılar için : 
-
-
-// const doubleSumFunction = (takenArray) => {
-//     // bir takım işlemler 
-//     let result = 0
-//     for (let i = 0; i < takenArray.length; i++) {
-//         //  result =result+ takenArray[i];
-//         //    takenArray[i]%2===1 ? result=takenArray[i]:"";
-//         if (takenArray[i] % 2 === 0) {
-//             result += takenArray[i]
+// const findTheBiggestNumber = (numbers) => {
+//     let resultNumber = numbers[0];
+//     for (let i = 1; i <numbers.length; i++) {
+//         if(resultNumber<numbers[i]){
+//             resultNumber=numbers[i]
 //         }
 //     }
-//     return result;
+//     return resultNumber;
 // }
-// const sentArray = [1, 2, 3, 4, 5, 6]
-// console.log(doubleSumFunction(sentArray));
+//
+// const numbers = [124, 23, 4, 5, 612321, 6321, 65454123, 32321];
+// console.log("en büyük sayı:",findTheBiggestNumber(numbers))
 
 
+/*
+ Soru7:
 
 
-// const findTheBiggestNumberInTheArray= (takenArray)=>{
-//     let result=takenArray[0]
-//     console.log("result",result);
+*/
 
-//     for (let i = 0; i < takenArray.length; i++) {
-//        if(takenArray[i]>result){
-//         result=takenArray[i]
-//        }
-//     }
-//     return result;
-// }
-
-// const sentArray = [22,31,44,66,167,33,111,132,10,26]
-// console.log("en büyük sayı: ");
-// console.log(findTheBiggestNumberInTheArray(sentArray));
