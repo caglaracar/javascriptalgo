@@ -138,9 +138,63 @@ Verilen bir dizi içindeki en büyük sayıyı bulan bir fonksiyon yazın.
 // console.log("en büyük sayı:",findTheBiggestNumber(numbers))
 
 
-/*
- Soru7:
+
+//  Soru7:
+//  Verilen bir dizi (array) içinde tekrar eden sayıları bulan bir JavaScript fonksiyonu yazın.
+//
+// Örneğin, [1, 2, 3, 4, 5, 6, 2, 4] dizisi verildiğinde, fonksiyonunuz 2 ve 4'ü tekrar eden sayılar olarak tanımlamalı
+// ve bu sayıları içeren yeni bir dizi döndürmelidir.
 
 
-*/
+const numbers=[1,2,3,4,5,6,1,3,7,7]
+const repeatedArray= (numbers)=>{
+    const returnArray=[];
+
+    for (let i = 0; i < numbers.length; i++) {
+
+        for (let j = 0; j <numbers.length ; j++) {
+            i!==j && numbers[i]===numbers[j]
+                ?
+                returnArray.includes(numbers[i]) ? 0:
+                returnArray.push(numbers[i])
+                :
+                0
+
+        }
+    }
+    return returnArray;
+}
+console.log("Tekrar eden  arrayim : ",repeatedArray(numbers))
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
