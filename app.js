@@ -145,35 +145,47 @@ Verilen bir dizi içindeki en büyük sayıyı bulan bir fonksiyon yazın.
 // Örneğin, [1, 2, 3, 4, 5, 6, 2, 4] dizisi verildiğinde, fonksiyonunuz 2 ve 4'ü tekrar eden sayılar olarak tanımlamalı
 // ve bu sayıları içeren yeni bir dizi döndürmelidir.
 
+//
+//     const numbers=[1,2,3,4,5,6,1,3,7,7]
+//     const repeatedArray= (numbers)=>{
+//     const returnArray=[];
+//
+//     for (let i = 0; i < numbers.length; i++) {
+//
+//         for (let j = 0; j <numbers.length ; j++) {
+//             i!==j && numbers[i]===numbers[j]
+//                 ?
+//                 returnArray.includes(numbers[i]) ? 0:
+//                 returnArray.push(numbers[i])
+//                 :
+//                 0
+//
+//         }
+//     }
+//     return returnArray;
+// }
+// console.log("Tekrar eden  arrayim : ",repeatedArray(numbers))
 
-const numbers=[1,2,3,4,5,6,1,3,7,7]
-const repeatedArray= (numbers)=>{
-    const returnArray=[];
 
-    for (let i = 0; i < numbers.length; i++) {
 
-        for (let j = 0; j <numbers.length ; j++) {
-            i!==j && numbers[i]===numbers[j]
-                ?
-                returnArray.includes(numbers[i]) ? 0:
-                returnArray.push(numbers[i])
-                :
-                0
+const data=[1,2,3,4,5,632,12,4,2,31,3,66,2,1,31,23,1,3,12,99,31,2312,54,123,58,45,21,55,58,3,77,32,32,32,321,32,312,57,312,312]
+const formatMaxTemp = () => {
+    const temps = []
+    let firstTemp = data[0]
 
-        }
+    for (let i = 1; i < data.length+1; i++) {
+        // if ( firstTemp < data[i] ){
+        //     firstTemp =data[i]
+        // }
+        // if ( i % 8 === 0){
+        //     temps.push(firstTemp)
+        //     firstTemp=data[i]
+        // }
     }
-    return returnArray;
+    console.log(temps);
 }
-console.log("Tekrar eden  arrayim : ",repeatedArray(numbers))
 
-
-
-
-
-
-
-
-
+formatMaxTemp()
 
 
 
