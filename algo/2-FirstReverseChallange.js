@@ -1,18 +1,18 @@
-/*
-Verilen String'i Ters Çevirme
- */
+/*Verilen String'i Ters Çevirme*/
 
-// const reverseString= (str)=>{
+// UZUN YOL
+// const reverseString = (str) => {
 //     const reverseArray=[];
-//     for (let i = str.length-1; i >=0 ; i--) {
+//     for (let i = str.length-1; i >=0; i--) {
 //         reverseArray.push(str[i])
 //     }
-//     return reverseArray.join('')
+//     return reverseArray.join('').toUpperCase()
 // }
 
-const reverseString= (str)=>{
-    return arr=str.split('').reverse().join('')
-}
+// KISA YOL
+ const reverseString= (str)=>{
+     return(str.split('').reverse().join('').toLowerCase())
+ }
 
-const str="Algorithms";
+const str = "AlGoritHms";
 console.log(reverseString(str))
