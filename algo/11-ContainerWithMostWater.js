@@ -30,12 +30,12 @@ Notice that you may not slant the container.
 //    return temp;
 // }
 
-const maxArea = function(height) {
+const maxArea = function (height) {
     let maxArea = 0;
     let left = 0;
     let right = height.length - 1;
-    let minHeight=0;
-    let area=0;
+    let minHeight = 0;
+    let area = 0;
 
     while (left < right) {
         if (height[left] < height[right]) {
@@ -54,8 +54,7 @@ const maxArea = function(height) {
 }
 
 
-
-    const givenArray = [18,114,1,4,7,9]
+const givenArray = [18, 114, 1, 4, 7, 9]
 
 console.log(maxArea(givenArray))
 

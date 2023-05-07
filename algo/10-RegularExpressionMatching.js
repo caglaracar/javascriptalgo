@@ -22,4 +22,4 @@ const isMatch = function(s, p) {
 const s = "aa";
 const p = ".*";
 
-console.log(isMatch(s, p)); // true
+console.log(isMatch(s, p));

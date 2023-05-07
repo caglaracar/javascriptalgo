@@ -4,14 +4,8 @@ Bir stringdeki tüm harfleri alfabetik sıraya göre yeniden düzenleyen ve ard�
  */
 
 const convertAlfabetich = (str) => {
-    return (str.toLowerCase()
-        .split(' ')
-        .filter(word => word !== '')
-        .join('')
-        .split('')
-        .sort((a,b)=>{return a.localeCompare(b)}))
-        .map((item,index)=>{return index%2!==0?item.toUpperCase():item.toLowerCase()})
-        .join('')
+
+
 
 }
 
